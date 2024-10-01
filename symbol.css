@@ -1,0 +1,73 @@
+.crossing{
+    margin: 45% 10% 0% -5%;
+}
+.line1{
+    background-color: rgb(255, 255, 255);
+    height: 1vw;
+    width: 11vw;
+    border-radius: 10px;
+    animation: rotatingRight 0.7s linear 0s 1 normal forwards;
+}
+.line2{
+    height: 1vw;
+    width: 11vw;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 1vw;
+    animation: rotatingLeft 0.7s linear 0s 1 normal forwards;
+}
+.zeroing{
+    margin: 9% 0 0 8%;
+    height:6.3vw;
+    width:6.3vw;
+    border-radius: 50%;
+    animation: zeroform 1.5s ease-in 0s 1 normal forwards;
+}
+
+
+
+@keyframes zeroform{
+    0%{
+        border: solid 1vw rgb(0, 0, 0);
+    }
+    25%{
+        border-top: solid 1vw white;
+    }
+    50%{
+        border-top: solid 1vw white;
+        border-right: solid 1vw white;
+        
+    }
+    75%{
+        border-top: solid 1vw white;
+        border-right: solid 1vw white;
+        border-bottom: solid 1vw white;
+        
+    }
+    100%{
+        border-top: solid 1vw white;
+        border-right: solid 1vw white;
+        border-bottom: solid 1vw white;
+        border-left: solid 1vw white;
+        
+    }
+}
+
+@keyframes rotatingRight{
+    0%{
+        transform:rotate(45deg) scale(0) rotateY(0);
+    }
+    100%{
+        transform: rotate(45deg) scale(1) rotateY(540deg);
+    }
+}
+
+@keyframes rotatingLeft{
+    0%{
+        transform:rotate(-45deg) scale(0) rotateY(0deg);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1) rotateY(540deg);
+    }
+}

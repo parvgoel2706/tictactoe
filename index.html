@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="symbol.css" />
+  </head>
+  <body>
+    <div class="firstWindow">
+      <h1 class="gamename">Tic-Tac-Toe</h1>
+      <div class="floater">
+        <h1 class="head">Game Instructions</h1>
+      </div>
+      <ul>
+        <li>Choose an X or O symbol to represent you</li>
+        <li>Take turns marking empty squares with your symbol</li>
+        <li>
+          Winning Condition:-
+          <i>The first player to get three of their marks in a row wins</i>
+        </li>
+        <li>
+          If all squares are filled and no player has three in a row, the game
+          is a <b><i>TIE</i></b>
+        </li>
+      </ul>
+
+      <div class="symbolChoice">
+        <div class="floater"><h1 class="head">Choose symbol</h1></div>
+        <input type="radio" name="selectedSymbol" value="zero" id="zero" />
+        <label for="zero" class="zero"></label>
+        <input type="radio" name="selectedSymbol" value="cross" id="cross" />
+        <label for="cross" class="cross"></label>
+      </div>
+    </div>
+    <div class="gameWindow">
+      <div class="zeroCollection">
+        <div class="zeropic"></div>
+        <div class="zeropic"></div>
+        <div class="zeropic"></div>
+        <div class="zeropic"></div>
+        <div class="zeropic"></div>
+      </div>
+
+      <div class="maingame">
+        <div class="displayChoice">
+          <div class="user player">
+            <img src="userlight.jpg" alt="user" />
+            <h3>Choose:-</h3>
+            <img class="symbolChosen" src="" alt="userSymbol" />
+          </div>
+          <div class="opponent player">
+            <img src="robolight.png" alt="opponent" />
+            <h3>Choose:-</h3>
+            <img class="symbolChosen" alt="opponentSymbol" />
+          </div>
+        </div>
+        <div class="grid">
+          <div class="firstRow">
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+          </div>
+          <div class="secondRow">
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+          </div>
+          <div class="thirdRow">
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+            <div class="box" id="9"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="crossCollection">
+        <div class="crosspic"></div>
+        <div class="crosspic"></div>
+        <div class="crosspic"></div>
+        <div class="crosspic"></div>
+        <div class="crosspic"></div>
+      </div>
+      <!-- <button class="exit">.</button> -->
+    </div>
+    <div id="popper">
+      <h1 class="result"></h1>
+      <div class="next">
+        <button class="restart endbtn">RESTART</button>
+        <button class="gohome endbtn">GO TO HOME</button>
+        <button class="exit endbtn">EXIT</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

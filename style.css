@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+.firstWindow {
+  height: 100vh;
+  background-image: url("./window1.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+}
+.gamename {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px 2px rgb(33, 33, 220);
+  /* margin: 0 0 2vh 34vw ;
+     */
+  margin: 0;
+  font-size: 6.5vw; /*media*/
+}
+.head {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: calc(35px - 0.1vw);
+  text-align: center;
+  animation: glowing 0.5s linear 0s infinite alternate;
+}
+
+ul {
+  color: rgb(255, 247, 2);
+  font-weight: 700;
+  font-size: calc(25px - 0.2vw);
+  line-height: calc(35px - 0.5vw);
+  list-style-type: none;
+}
+.zero,
+.cross {
+  /* margin: 7vh 10vw 0 35vw; */
+  display: inline-block;
+  height: 9vw;
+  width: 9vw;
+  background-image: url("./zero.png");
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.cross {
+  margin: 7vh 0 0 4vw;
+  background-image: url("./cross.png");
+}
+input {
+  visibility: hidden;
+}
+.zero:hover,
+.cross:hover {
+  background-color: rgba(0, 0, 0);
+  box-shadow: 0px 0px 30px white;
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+.symbolSelected {
+  background-color: rgba(0, 0, 0);
+  box-shadow: 0px 0px 30px white;
+  /* transform:scale(1.1); */
+  border: solid 5px rgb(229, 233, 8);
+  margin-top: 7vh;
+}
+
+.play {
+  background-color: red;
+  color: wheat;
+  font-size: 1.5vw;
+  padding: 0.7vw;
+  margin: 2.5vw 0 0 4vw;
+  animation: popoutBtn 1s ease-out 0s 1 normal forwards;
+}
+
+.gameWindow {
+  display: flex;
+  background-image: url("./window2.png");
+  /* background-size: contain; */
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.zeroCollection,
+.crossCollection {
+  width: 33.33%;
+  background-color: rgba(0, 0, 0, 0.675);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.crossCollection {
+  flex-wrap: wrap-reverse;
+}
+.zeropic,
+.crosspic {
+  height: 14vw;
+  width: 14vw;
+  background-image: url(./cross.png);
+  background-size: cover;
+}
+.zeropic {
+  background-image: url(./zero.png);
+  background-size: cover;
+}
+.maingame {
+  height: 100vh;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  background-image: url("./images.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.displayChoice {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.player {
+  display: flex;
+  width: 16vw;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: yellow;
+    display: inline;
+    font-size: 1.4vw;
+  }
+  img {
+    margin: 3vh 0.5vw;
+    width: 2.5vw;
+  }
+}
+
+.grid {
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.firstRow,
+.secondRow,
+.thirdRow {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  height: 10vw;
+  width: 10vw;
+  background-image: url("./box.jpg");
+  background-size: contain;
+}
+.box:hover {
+  transition: transform 0.5s;
+  transform: scale(1.07);
+}
+
+.turn {
+  margin-bottom: 8vh;
+  height: 1rem;
+  font-size: 2.2vw;
+  text-align: center;
+  animation: popoutTxt 0.5s linear 0s 1 normal forwards;
+}
+
+.popupBox{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  bottom:80vh;
+  left:39vw;
+  height: 60vh;
+  width: 20vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  color:#FF85FF;
+  h1{
+    text-shadow: 0px 0px 13px rgb(77, 58, 247);
+  }
+  .next{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+  }
+}
+.endbtn{
+  background-color: rgb(248, 0, 0);
+  color: wheat;
+  font-size: 1.2vw;
+  height: 20%;
+  width:50%;
+  animation: popoutBtn 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes glowing {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 20px rgb(12, 248, 0);
+  }
+}
+
+@keyframes popoutBtn {
+  0% {
+    transform: scale(0);
+    border-radius: 0;
+    border: solid 0px black;
+    box-shadow: 0px 0px white;
+  }
+  100% {
+    transform: scale(1.2);
+    border-radius: 1vw;
+    border: solid 0.5vw black;
+    box-shadow: 0px 0px 15px rgb(249, 241, 1);
+  }
+}
+
+@keyframes popoutTxt {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 480px) {
+  .gameWindow {
+    flex-direction: column-reverse;
+  }
+  .zeroCollection,
+  .crossCollection {
+    width: 100%;
+    height: 60%;
+    flex-direction: row;
+  }
+  .maingame {
+    width: 100%;
+  }
+}

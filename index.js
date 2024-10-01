@@ -348,7 +348,7 @@ goHome.addEventListener("click", function a() {
 });
 
 exitbtn.addEventListener("click",()=>{
-  this.close();
+  this.close(``, `_parent`, ``);
 })
 restart.addEventListener("click", function b() {
   reset(this);

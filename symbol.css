@@ -71,3 +71,22 @@
         transform: rotate(-45deg) scale(1) rotateY(540deg);
     }
 }
+
+@media (max-width: 700px) {
+    .crossing{
+        margin: 45% 10% 0% 0%;
+    }
+    .line1{
+        height: 1vw;
+        width: 16vw;
+    }
+    .line2{
+        height: 1vw;
+        width: 16vw;
+    }
+    .zeroing{
+        margin: 11% 0 0 10%;
+        height:10vw;
+        width:10vw;
+    }
+}

@@ -1,4 +1,16 @@
-body {
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+} */
+
+body,html{
   margin: 0;
   overflow: hidden;
 }
@@ -22,15 +34,15 @@ body {
   animation: glowing 0.5s linear 0s infinite alternate;
 }
 
-ul{
+ul {
   color: rgb(255, 247, 2);
   font-weight: 700;
   font-size: calc(25px - 0.2vw);
   line-height: calc(40px - 0.5vw);
   list-style-type: none;
 }
-ul li:nth-of-type(even){
-  color:rgb(236, 125, 125)
+ul li:nth-of-type(even) {
+  color: rgb(236, 125, 125);
 }
 .zero,
 .cross {
@@ -244,7 +256,7 @@ input {
     margin-top: 5vh;
     font-size: 6vw;
   }
-  
+
   ul {
     font-size: 4vw;
     line-height: 5vh;
@@ -310,7 +322,7 @@ input {
       font-size: 3.5vw;
     }
   }
-  .endbtn{
+  .endbtn {
     font-size: 3vw;
   }
 }

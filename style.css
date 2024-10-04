@@ -25,7 +25,7 @@ body {
 }
 
 ul {
-  color: rgb(255, 247, 2);
+  color: rgb(255, 247, 1);
   font-weight: 700;
   font-size: calc(25px - 0.2vw);
   line-height: calc(35px - 0.5vw);

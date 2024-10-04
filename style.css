@@ -11,8 +11,6 @@ body {
 .gamename {
   color: rgb(255, 255, 255);
   text-shadow: 4px 2px 2px rgb(33, 33, 220);
-  /* margin: 0 0 2vh 34vw ;
-     */
   margin: 0;
   font-size: 6.5vw; /*media*/
 }
@@ -24,12 +22,15 @@ body {
   animation: glowing 0.5s linear 0s infinite alternate;
 }
 
-ul {
+ul{
   color: rgb(255, 247, 2);
   font-weight: 700;
   font-size: calc(25px - 0.2vw);
-  line-height: calc(35px - 0.5vw);
+  line-height: calc(40px - 0.5vw);
   list-style-type: none;
+}
+ul li:nth-of-type(even){
+  color:rgb(236, 125, 125)
 }
 .zero,
 .cross {
@@ -237,6 +238,28 @@ input {
 }
 
 @media (max-width: 700px) {
+  .gamename {
+    font-size: 12vw;
+  }
+  .head {
+    margin-top: 5vh;
+    font-size: 6vw;
+  }
+  
+  ul {
+    font-size: 4vw;
+    line-height: 5vh;
+  }
+  .zero,
+  .cross {
+    height: 17vw;
+    width: 17vw;
+  }
+  .play {
+    font-size: 3.5vw;
+    padding: 2vw;
+    margin-top: 5vh;
+  }
   .gameWindow {
     flex-direction: column-reverse;
   }
@@ -245,16 +268,16 @@ input {
     h3 {
       color: yellow;
       display: inline;
-      font-size: 4vw;
+      font-size: 5vw;
     }
     img {
       margin: 4vh 2vw;
-      width: 5vw;
+      width: 6vw;
     }
   }
   .grid {
     width: 55vw;
-    height : 51vw;
+    height: 51vw;
     margin-left: 22vw;
   }
   .box {
@@ -278,5 +301,17 @@ input {
   }
   .maingame {
     width: 100%;
+  }
+  .popupBox {
+    bottom: 65vh;
+    left: 35vw;
+    height: 35vh;
+    width: 30vw;
+    h1 {
+      font-size: 3.5vw;
+    }
+  }
+  .endbtn{
+    font-size: 1.5vw;
   }
 }

@@ -285,7 +285,7 @@ input {
   }
   .turn {
     margin-top: 5vh;
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
   .firstRow,
   .secondRow,
@@ -302,15 +302,15 @@ input {
     width: 100%;
   }
   .popupBox {
-    bottom: 70vh;
-    left: 35vw;
-    height: 45vh;
-    width: 30vw;
+    bottom: 65vh;
+    left: 30vw;
+    height: 35vh;
+    width: 40vw;
     h1 {
       font-size: 3.5vw;
     }
   }
   .endbtn{
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }

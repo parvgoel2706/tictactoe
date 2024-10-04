@@ -60,11 +60,11 @@ function gameButton() {
 function displayChosenSymbol(symbol) {
   return new Promise((resolve, reject) => {
     if (symbol == "zero") {
-      symbolChosen[0].setAttribute("src", "./circle.png");
-      symbolChosen[1].setAttribute("src", "./multiply.png");
+      symbolChosen[0].setAttribute("src", "./images/circle.png");
+      symbolChosen[1].setAttribute("src", "./images/multiply.png");
     } else {
-      symbolChosen[0].setAttribute("src", "./multiply.png");
-      symbolChosen[1].setAttribute("src", "./circle.png");
+      symbolChosen[0].setAttribute("src", "./images/multiply.png");
+      symbolChosen[1].setAttribute("src", "./images/circle.png");
     }
     resolve();
   });
